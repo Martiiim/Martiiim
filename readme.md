@@ -30,6 +30,6 @@
 <h4 align="center">- Contribution Snake! -</h4>
 
 <p align="center">
-    <img src="https://github.com/dekrypted/dekrypted/blob/output/github-contribution-grid-snake.svg#gh-light-mode-only">
-    <img src="https://github.com/Martiiim/description/blob/main/index.svg">
+    <img src="https://github.com/Martiiim/description/blob/main/light.svg#gh-light-mode-only)">
+    <img src="https://github.com/Martiiim/description/blob/main/dark.svg#gh-dark-mode-only">
 </p>
