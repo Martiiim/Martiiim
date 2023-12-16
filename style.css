@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+html{
+  height:100%;
+  overflow:hidden;
+}
+body{
+  background:black;
+  font-family: 'Staatliches', cursive;
+
+  white-space:nowrap;
+  overflow:hidden;
+  user-select:none;
+}
+#root{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:400px;
+  height:400px;
+  font-size:64px;
+}
+#app{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:100%;
+  height:100%;
+  border:3px solid white;
+  color:white;
+  transition:0.05s;
+}
+#app:after{
+  content:'SNAKE GAME';
+  position:absolute;
+  left:40%;
+  top:-10%;
+  transform:translate(-50%,-50%);
+}
+#control{
+  color:white;
+  position:absolute;
+  top:-10%;
+  left:90%;
+  transform:translate(-50%,-50%);
+  font-size:87.5%;
+  transition:0.05s;
+}
+#score{
+  color:white;
+  position:absolute;
+  top:110%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  transition:0.05s;
+}
+#score:before{
+  content:'Score ';
+}
+#point0 , #point1 , #point2 , #point3{
+  color:white;
+  font-size:56.25%;
+  position:absolute;
+  transform:translate(-50%,-50%);
+  opacity:0;
+}
+#start{
+  opacity:1;
+  color:white;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  transition:1s;
+}
+#start:hover{
+  cursor:pointer;
+  text-shadow:0px 0px 24px white;
+}
+#start:before{
+  content:'';
+  background:black;
+  position:absolute;
+  z-index:-1;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:100vw;
+  height:100vh;
+  opacity:0.75;
+  pointer-events:none;
+}
+#gameover{
+  display:none;
+  opacity:0;
+  color:white;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  transition:1s;
+}
+#gameover:before{
+  content:'';
+  background:black;
+  position:absolute;
+  z-index:-1;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:100vw;
+  height:100vh;
+  opacity:0.75;
+}
+#playagain{
+  display:none;
+  opacity:0;
+  color:white;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  transition:0.5s;
+}
+#playagain:hover{
+  cursor:pointer;
+  text-shadow:0px 0px 24px white;
+}
+#playagain:before{
+  content:'';
+  background:black;
+  position:absolute;
+  z-index:-1;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:100vw;
+  height:100vh;
+  opacity:0.75;
+  pointer-events:none;
+}
+#test {color:white;}
+input{ position:absolute; top:-200%;}
+#keyboard{
+  position:absolute;
+  z-index:-1;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:700px;
+  height:400px;
+  font-size:136px;
+  color:white;
+}
+.up{
+  position:absolute;
+  top:30%;
+  left:10%;
+  transform:translate(-50%,-50%);
+}
+.down{
+  position:absolute;
+  top:75%;
+  left:10%;
+  transform:translate(-50%,-50%);
+}
+.left{
+  position:absolute;
+  top:30%;
+  left:90%;
+  transform:translate(-50%,-50%);
+}
+.right{
+  position:absolute;
+  top:75%;
+  left:90%;
+  transform:translate(-50%,-50%);
+}
+.button{
+  font-size:100%;
+  transition:0.5s;
+}
+.button:hover{
+  transform:translate(-50%,-50%)scale(1.1);
+}
