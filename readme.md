@@ -30,8 +30,5 @@
 <h4 align="center">- Contribution Snake! -</h4>
 
 <p align="center">
-    <picture>
-  <source srcset="https://github.com/Martiiim/description/blob/main/dark.svg" media="(prefers-color-scheme: dark)">
-  <img src="https://github.com/Martiiim/description/blob/main/light.svg">
-</picture>
+![snake animation](https://github.com/<Martiim>/<Martiiim>/blob/output/github-contribution-grid-snake2.svg)
 </p>
