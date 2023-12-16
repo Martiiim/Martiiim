@@ -29,4 +29,7 @@
 
 <h4 align="center">- Contribution Snake! -</h4>
 
-  ![Snake animation](https://github.com/Martiiim/Martiiim/blob/main/dark.svg)
+<picture>
+  <source srcset="https://github.com/Martiiim/Martiiim/blob/main/dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="https://github.com/Martiiim/Martiiim/blob/main/light.svg">
+</picture>
