@@ -8,12 +8,11 @@
 
 
 
-<a>
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=Martiiim" />
-</a>
-<a>
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Martiiim&layout=compact&langs_count=8&card_width=320" />
-</a>
+ <div>
+  <a href="https://github.com/Martiiim">
+   <img align="center" height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Martiiim&layout=compact&langs_count=16&theme=dark"/>
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=Martiiim&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&hide=issues"/>
+</div>
 
 
 
