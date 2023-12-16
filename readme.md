@@ -29,6 +29,4 @@
 
 <h4 align="center">- Contribution Snake! -</h4>
 
-<p align="center">
-![snake animation](https://github.com/<Martiim>/<Martiiim>/blob/output/github-contribution-grid-snake2.svg)
-</p>
+  ![Snake animation](https://github.com/Martiiim/Martiiim/blob/output/github-contribution-grid-snake.svg)
