@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/dynamic/json?&label=Total%20Forks&color=ff7700&style=flat&style=for-the-badge&query=%24.forks&url=https://api.github-star-counter.workers.dev/user/Martiiim" alt="Total Forks"></a> </p>
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Martiiim&theme=dark)
-)](https://github.com/anuraghazra/github-readme-stats)
+)](https://github.com/anuraghazra/github-readme-stats
 
 ---
 
