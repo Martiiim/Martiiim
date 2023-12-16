@@ -14,7 +14,7 @@
 
 - 🌱 I’m currently learning: **Web Development (Backend)**
 
-- 💬 Ask me about: **HTML, CSS, Javascript and Python tough i dont know alot about them**
+- 💬 Ask me about: **HTML, CSS, Javascript and Python altough i dont know alot about them**
 
 - ⚡ Fun fact: **Watching a graduation ceremony is like sitting through a movie that's entirely end credits.**
 
