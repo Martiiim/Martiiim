@@ -21,7 +21,7 @@
 
 - 💬 Ask me about: **HTML, CSS, Javascript and Python altough i dont know alot about them**
 
-- ⚡ Fun fact: **Watching a graduation ceremony is like sitting through a movie that's entirely end credits.**
+- ⚡ Fun fact: **GitHub's mascot is called "Octocat." It's a cat with octopus tentacles, and you can often spot it in GitHub's branding.**
 
 ---
 
