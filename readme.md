@@ -30,6 +30,8 @@
 <h4 align="center">- Contribution Snake! -</h4>
 
 <p align="center">
-    <img src="https://github.com/Martiiim/description/blob/main/light.svg#gh-light-mode-only)">
-    <img src="https://github.com/Martiiim/description/blob/main/dark.svg#gh-dark-mode-only">
+    <picture>
+  <source srcset="https://github.com/Martiiim/description/blob/main/dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="https://github.com/Martiiim/description/blob/main/light.svg">
+</picture>
 </p>
