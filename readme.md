@@ -6,9 +6,14 @@
 <img src="https://img.shields.io/badge/dynamic/json?&label=Total%20Stars&color=ff0000&style=flat&style=for-the-badge&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/Martiiim" alt="Total Stars" ></a>
 <img src="https://img.shields.io/badge/dynamic/json?&label=Total%20Forks&color=ff7700&style=flat&style=for-the-badge&query=%24.forks&url=https://api.github-star-counter.workers.dev/user/Martiiim" alt="Total Forks"></a> </p>
 
----
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Martiiim&theme=dark)
+
+<a>
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=Martiiim" />
+</a>
+<a>
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=Martiiim&layout=compact&langs_count=8&card_width=320" />
+</a>
 
 
 
