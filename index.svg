@@ -1,12 +1,103 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg 
- version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="1024.000000pt" height="10.000000pt" viewBox="0 0 1024.000000 10.000000"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,10.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-</g>
-</svg>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - SVG Snake Game</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="root" readonly="true"></div>
+<div id="keyboard">
+  <div class="button up"><i onclick="handlekeys(1)" class="fas fa-arrow-circle-up"></i></div>
+  <div class="button down"><i onclick="handlekeys(2)" class="fas fa-arrow-circle-down"></i></div>
+  <div class="button left"><i onclick="handlekeys(3)" class="fas fa-arrow-circle-right"></i></div>
+  <div class="button right"><i onclick="handlekeys(4)" class="fas fa-arrow-circle-left"></i></div>
+</div>
+<!-- partial -->
+<script>
+//****************//
+//*Initialization*//
+//*******UI*******//
+//****************//
+var data = ""; {
+data += "<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.6.3/css/all.css\" integrity=\"sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/\" crossorigin=\"anonymous\">";
+data += "<div id=\"app\"></div>";
+data += "<div id=\"control\"></div>";
+data += "<div id=\"score\">000</div>";
+data += "<div id=\"point0\">+100</div>";
+data += "<div id=\"point1\">+100</div>";
+data += "<div id=\"point2\">+100</div>";
+data += "<div id=\"point3\">+100</div>";  
+data += "<div id=\"start\">Click to play</div>";
+data += "<div id=\"gameover\">GAME OVER</div>";
+data += "<div id=\"playagain\">Play again?</div>";
+data += "<div id=\"test\"></div>";
+}
+document.getElementById("root").innerHTML = data;
+//****************//
+//****THE*GAME****//
+//****************//
+var snake = []; /*Our snake and the other */ {
+snake[0] = {x:105,y:95}; // Initialization
+snake[1] = {x:100,y:95}; // of three first
+snake[2] = {x:95,y:95};  // snake elements
+var stagecolors = ["white","#00a8ff","#fbc531","#4cd137","#e84118","#9c88ff","#487eb0","#7f8fa6","#f5f6fa",
+              "#273c75","#ff9ff3","#feca57","#ff6b6b","#48dbfb","#1dd1a1","#5f27cd","#ff5252",
+              "#ff793f","#40407a","#ffb142","#706fd3","#34ace0","#ffda79"];  // Stage colors
+var snakecolors = ["#44bd32","#bdc3c7","#9b59b6","#d35400","#e67e22","#f39c12","#f1c40f"];  // snake colors
+var pointcolors = ["#d63031","#fab1a0","#8e44ad","#833471","#B53471","#be2edd","#e056fd"];  // point colors
+var playeriter = 0;      // player colors iterator
+var points = 2;          // The length of our snake
+var pointx = [];
+var pointy = [];
+pointx[0] = Math.floor((Math.random() * 40) + 0)*5; // Our goal 
+pointy[0] = Math.floor((Math.random() * 40) + 0)*5; // generated randomly
+var exist = 0;
+var score = 0;           // Variable that has our score
+var pointval = 0;
+var changedir = 1;       // Variable that checks if direction was changed
+var direction = 1;       // Variable of directions that snake goes
+var icon = "";           // Variable of Icon that display while we click control
+var limiter = 0;         // Variable to limit the time and speed up the game
+var timechange = 1;      // Variable to multiply the limit so every stage lasts 1 min
+var gamespeed = 200;     // Variable showing how fast is game working
+var coloriter = 0;       // Color iteration
+var scale = 1;           // Device scale
+var game;
+} // Variables
+setscale();
+function setscale() {
+let width = window.innerWidth;
+let height = window.innerHeight;
+if(height < 550 || width < 450) {
+  document.getElementById("root").style.height = 300 + "px";
+  document.getElementById("root").style.width = 300 + "px";
+  document.getElementById("root").style.fontSize = 48 + "px";
+  scale = 0.75;
+}
+if(width < 700) {
+  document.getElementById("keyboard").style.display = "none";
+}
+}
+function drawme(snakecolor,pointcolor){
+  let data = "<svg viewbox=\"0 0 200 200\">";   // Start drawing svq
+  for(let i=0;i<=exist;i++){
+  data += "<rect x=\""+pointx[i]+"\" y=\""+pointy[i]+"\" width=\"5\" height=\"5\""; // Draw our points
+  data += "style=\"fill:"+pointcolor+";stroke:none;\"/>"; }                                
+  for(let i=0;i<=points;i++){                                                 // Draw our snake
+  data += "<rect x=\""+snake[i].x+"\" y=\""+snake[i].y+"\" width=\"5\" height=\"5\"";
+  data += "style=\"fill:"+snakecolor+";stroke:none;\"/>"; 
+  }
+  data += "</svg>";                            // End drawing svq
+  document.getElementById("app").innerHTML = data;  // Display that
+} // Function drawing the game
+drawme(snakecolors[0],pointcolors[0]);             // Draw the first frame of the game
+placepoint(0);         // Place the label for pointing in the game
+document.onkeydown = function (event){
+  if(changedir == 1) /*If you can change direction now*/ {
+  let control = event.keyCode;    // Read the keycode of pressed key
+  if((control == 38 || control == 87) && direction != 2 ) {direction = 4; icon = "<i class=\"fas fa-arrow-circle-up\"></i>";} // And adjust to the
+  if((control == 39 || control == 68) && direction != 3 ) {direction = 1; icon = "<i class=\"fas fa-arrow-circle-right\"></i>";} // right event
+  if((control == 40 || control == 83) && direction != 4 ) {direction = 2; icon = "<i class=\"fas fa-arrow-circle-down\"></i>";} // also display
+  if((control == 37 || control == 65)
