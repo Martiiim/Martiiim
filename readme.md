@@ -18,7 +18,7 @@
 
 <h4 align="center">- About Me - </h4>
 
-- ✔️ Latest public project: **[Email Generator](https://github.com/dekrypted/email-generator)**
+- ✔️ Latest public project: **[Random Quote Generator](https://github.com/Martiiim/Quote-Generator)**
 
 - 🌱 I’m currently learning: **Web Development (Backend)**
 
