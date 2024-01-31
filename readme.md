@@ -8,7 +8,7 @@
 ​
 <div>
   <a href="https://github.com/Martiiim">
-   <img align="center" height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Martiiim&layout=compact&langs_count=16&theme=dark](https://github.com/Martiiim/Martiiim/blob/92e699491edbcc6cc149457a98fb0b0800163619/readme.md)"/>
+   <img align="center" height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Martiiim&theme=vue-dark&show_icons=true&hide_border=true&layout=compact"/>
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=Martiiim&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide=issues"/>
 </div>
 
