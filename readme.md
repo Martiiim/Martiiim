@@ -9,7 +9,7 @@
 <div>
   <a href="https://github.com/Martiiim">
    <img align="center" height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Martiiim&theme=vue-dark&show_icons=true&hide_border=true&layout=compact"/>
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=Martiiim&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide=issues"/>
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=Martiiim&theme=vue-dark&show_icons=true&hide_border=true&count_private=true"/>
 </div>
 
 
