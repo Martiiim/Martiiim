@@ -1,5 +1,5 @@
 <h1 align="center">Hey 👋, I'm Martiiim!</h1>
-<h3 align="center">I'm your average unknown years old programmer, gamer & nerd. Hope you enjoy my GitHub! If you do, drop a follow!</h3>
+<h3 align="center">I'm your average programmer, gamer & nerd. Hope you enjoy my GitHub! If you do, drop a follow!</h3>
 
 
 
